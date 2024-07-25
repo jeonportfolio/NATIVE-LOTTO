@@ -4,13 +4,17 @@ import { Typography } from '../components/Typography';
 import {Header} from '../components/Header/Header';
 import {Divider} from '../components/Divider';
 import {LottoNumberView} from '../components/LottoNumberView'
+import { useSelector } from 'react-redux';
 export const HistoryListScreen = (props)=>{
-    const [history, setHistory] = useState([
-        {date:new Date(), numbers:[1,2,3,4,5,6]},
-        {date:new Date(), numbers:[1,2,3,4,5,6]},
-        {date:new Date(), numbers:[1,2,3,4,5,6]},
-        {date:new Date(), numbers:[1,2,3,4,5,6]},
-    ])
+    //const [history, setHistory] = useState([
+    //    {date:new Date(), numbers:[1,2,3,4,5,6]},
+    //    {date:new Date(), numbers:[1,2,3,4,5,6]},
+    //    {date:new Date(), numbers:[1,2,3,4,5,6]},
+    //    {date:new Date(), numbers:[1,2,3,4,5,6]},
+    //])
+
+    const history = useSelector((state) => state.numbers.history);
+
     return (
         <View style={{flex:1,}}>
             <Header>

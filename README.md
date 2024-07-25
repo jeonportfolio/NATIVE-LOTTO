@@ -26,5 +26,20 @@
 ▶숫자를 오름차순으로 정렬 -> sort함수 사용 
 
 
+## 이전 생성한 번호를 Redux에 저장 
+
+▶ npm install redux redux-logger react-redux -> redux, logger 설치 
+▶ actions, reducer,store 생성
+▶ reducer를 통해 history를 저장한다.
+▶ store에서 combineReducer를 통해 모든 Reducer들을 저장 , applymiddleware를 통해 logger 실행
+▶ HomeScreen에서 useDispatch를 통해 action을 불러온다.
+
+## 애니메이션 추가하기 
+
+▶ onLayout에서 nativeEvent를 활용하여 높이를 측정한다.
+▶ Animated를 임포트 하고 translateY를 사용하여 높이를 변환
+
+
+
 
 
