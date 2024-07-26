@@ -32,7 +32,7 @@ export const HistoryListScreen = (props)=>{
                 }}
                 renderItem={({item})=>(
                     <View style={{ paddingHorizontal:20, paddingVertical:12,marginHorizontal:24, height:120, backgroundColor:'white'}}>
-                        <Typography fontSize={16}>{item.date.getFullYear()}.{item.date.getMonth()}.{item.date.getDay()}</Typography>
+                        <Typography fontSize={16}>{item.date}</Typography>
                         <View style={{flex:1, flexDirection:'row', alignItems:'center', justifyContent:'space-between'}}>
                             <LottoNumberView numbers={item.numbers}/>
                         </View>
