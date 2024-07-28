@@ -48,6 +48,12 @@
 ▶ 앱 종료 후에도 마지막에 뽑았던 수를 보여주고 히스토리가 남아있는 기능 <br>
 
 
+## 웹에서 사용 가능한 다운로드
+
+▶ `npx expo install react-native-web react-dom @expo/metro-runtime`
+▶ `npm run web` 웹에서 실행 
+
+
 
 
 
